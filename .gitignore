@@ -1,0 +1,60 @@
+# Local cookie dumps
+facebook_cookies.json
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+
+# Inputs and data
+SitesTK.csv
+*.csv
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Test and coverage
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+
+# Editors and IDEs
+.vscode/
+.idea/
+.history/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Playwright
+.playwright/
+
+# Local env files
+.env
+
+# Logs and output
+logs/
+Out/
+*.log
+
+# Misc
+node_modules/
+.mypy_cache/
+*~
+*.swp
+.SitesTK.csv
+*.txt
