@@ -15,6 +15,3 @@ class FileException(BrowserException):
     def __init__(self, message, status_code = "002"):
         super().__init__(message, status_code)
         
-class FileNotFoundException(FileException):
-    def __init__(self, message, status_code = "003"):
-        super().__init__(message, status_code)

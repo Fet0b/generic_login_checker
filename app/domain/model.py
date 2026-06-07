@@ -24,13 +24,8 @@ class file_to_list:
     file: Path
     
     def __init__(self, file: Path | str):
-        try:
-            self.file = Path(file)
-            self.convert_to_list(file)
-            
-        except: 
-            raise FileException("Arquivo não encontrado")
-            
+        self.file = Path(file)
+        
     def convert_to_list(self) -> List[List[str]]:  
         
         try: 
@@ -39,7 +34,7 @@ class file_to_list:
                 return list(reader)
             
         except: 
-            raise FileException
+            raise FileException("Arquivo não encontrado")
 
 #TODO            
 class browser_with_proxy:
