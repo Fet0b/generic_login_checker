@@ -25,7 +25,7 @@ class file_to_list:
     
     def __init__(self, file: Path | str):
         self.file = Path(file)
-        
+
     def convert_to_list(self) -> List[List[str]]:  
         
         try: 
@@ -36,12 +36,17 @@ class file_to_list:
         except: 
             raise FileException("Arquivo não encontrado")
 
+
 #TODO            
 class browser_with_proxy:
-    proxy_ips: list[str]
+
+    def __init__(self, proxy_ips: Path):
+        self.proxy_ips = file_to_list(proxy_ips)
 
     def open_broser_with_proxy(self) -> str:
-
+        
+        proxy_list = self.proxy_ips.convert_to_list()
+        
         try: 
             print("TODO")
 
